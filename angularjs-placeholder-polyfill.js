@@ -2,7 +2,7 @@ angular.module('customPlaceholder', []).directive('placeholder', function(){
     //	cn-placeholder directive definition object
     return {
         restrict: 'A',
-        require: 'ngModel',
+        require: '?ngModel',
         link: function(scope, elm, attrs, ctrl) {
             if (!('placeholder' in $('<input type="text">')[0])) {
                 //	setup the label overlay for input
