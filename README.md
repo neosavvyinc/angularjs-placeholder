@@ -7,7 +7,7 @@ Inspired from https://gist.github.com/veeracs/5770791.
 Requires
 ==========================
 1. Angularjs - obviously!
-1. Modernizr.js with placeholder support detection (Get your custom build here http://modernizr.com/download/#-input-inputtypes-forms_placeholder)
+2. jQuery. Using this instead of Modernizr because of the project requirements.
 
 
 Installation

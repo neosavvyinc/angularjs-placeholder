@@ -4,7 +4,7 @@ angular.module('customPlaceholder', []).directive('placeholder', function(){
         restrict: 'A',
         require: 'ngModel',
         link: function(scope, elm, attrs, ctrl) {
-            if (!Modernizr.placeholder) {
+            if (!('placeholder' in $('<input type="text">')[0])) {
                 //	setup the label overlay for input
                 var computedStyle = window.getComputedStyle(elm[0], null),
                     leftPadding = computedStyle.getPropertyValue('padding-left'),
